@@ -1,0 +1,12 @@
+# Discount Rate Calculator
+
+This is my first Python project.
+
+It calculates the final price after applying a discount.
+
+## Features
+- Calculate discount
+- Show final price
+- Handle invalid input
+
+Made by Himanshu Soni
