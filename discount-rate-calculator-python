@@ -1,0 +1,24 @@
+# Product Price Calculator
+
+try:
+    original_price = float(input("Enter Original Price: ₹"))
+    discount_percent = float(input("Enter Discount %: "))
+
+    if original_price < 0:
+        print("❌ Original Price cannot be negative.")
+
+    elif discount_percent < 0 or discount_percent > 100:
+        print("❌ Discount must be between 0 and 100.")
+
+    else:
+        discount_amount = (discount_percent / 100) * original_price
+        final_price = original_price - discount_amount
+
+        print("\n------ Result ------")
+        print(f"Original Price : ₹{original_price:.2f}")
+        print(f"Discount       : {discount_percent:.2f}%")
+        print(f"You Saved      : ₹{discount_amount:.2f}")
+        print(f"Final Price    : ₹{final_price:.2f}")
+
+except ValueError:
+    print("❌ Please enter only numbers.")
